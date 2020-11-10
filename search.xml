@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>122. Best Time to Buy and Sell Stock II</title>
+      <link href="/2020/11/10/II/"/>
+      <url>/2020/11/10/II/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Say you have an array prices for which the ith element is the price of a given stock on day i.</p><p>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).</p><p>Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).</p><h3 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1:"></a>Example 1:</h3><p>Input: [7,1,5,3,6,4]<br>Output: 7<br>Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.<br>             Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.</p><h3 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2:"></a>Example 2:</h3><p>Input: [1,2,3,4,5]<br>Output: 4<br>Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.<br>             Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are<br>             engaging multiple transactions at the same time. You must sell before buying again.</p><h3 id="Example-3"><a href="#Example-3" class="headerlink" title="Example 3:"></a>Example 3:</h3><p>Input: [7,6,4,3,1]<br>Output: 0<br>Explanation: In this case, no transaction is done, i.e. max profit = 0.</p><p>Constraints:</p><p>1 &lt;= prices.length &lt;= 3 * 10 ^ 4<br>0 &lt;= prices[i] &lt;= 10 ^ 4</p><h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/11/09/hello-world/"/>
       <url>/2020/11/09/hello-world/</url>
