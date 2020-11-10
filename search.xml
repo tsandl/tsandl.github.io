@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MyRocks</title>
+      <link href="/2020/11/10/MyRocks/"/>
+      <url>/2020/11/10/MyRocks/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h6 id="引用自：温正湖-https-zhuanlan-zhihu-com-p-45652076"><a href="#引用自：温正湖-https-zhuanlan-zhihu-com-p-45652076" class="headerlink" title="引用自：温正湖 https://zhuanlan.zhihu.com/p/45652076"></a>引用自：温正湖 <a href="https://zhuanlan.zhihu.com/p/45652076">https://zhuanlan.zhihu.com/p/45652076</a></h6><p>​        本文主要介绍什么是MyRocks，包括其功能特性，重点讲解MyRocks相比InnoDB的优势，详细分析MyRocks适用的各种场景。RocksDB是FaceBook基于Google开源的LevelDB实现的，使用LSM(Log-Structure Merge）树来存储数据。Facebook开发工程师对RocksDB进行了大量的开发，使其符合MySQL的插件式存储引擎框架的要求，移植到了MySQL上，并称之为MyRocks。MyRocks支持基于SQL的数据读写、锁机制、MVCC、事务、主从复制等MySQL绝大部分功能特性。从使用习惯考虑，使用MyRocks还是使用MySQL/InnoDB并没有多大区别。</p><p>​        经过4年多的发展，MyRocks已经成熟，开源的MySQL分支版本Percona和MariaDB已将MyRocks迁移到自己的MySQL分支中，InnoSQL作为网易的MySQL分支，目前也已支持MyRocks，具体版本为InnoSQL 5.7.20-v4，在开源的MyRocks代码基础上，我们对其做了功能优化增强、bugfix，并支持对其进行本地和远程在线物理备份。下面先简要介绍MyRocks特性，让大家对其有个基本认识。由于MyRocks只是将InnoDB替换为RocksDB，所以MySQL Server层的逻辑并没有多大变化，包括SQL解析和执行计划，基于Binlog的多线程复制机制等。我们讨论的焦点主要是存储引擎层，也就是RocksDB上。</p><p>​        本文主要包括3个部分：首先是通过RocksDB读写流程来介绍其整体框架、存储后端和功能特性；接着分多维度分析其与InnoDB的不同点，这些差别所带来的的好处；最后分析RocksDB的这些优势能够用在哪些业务场景上。文章较长，大家可以调自己感兴趣的部分食用。</p><h5 id="RocksDB读写流程"><a href="#RocksDB读写流程" class="headerlink" title="RocksDB读写流程"></a>RocksDB读写流程</h5><h5 id="写流程"><a href="#写流程" class="headerlink" title="写流程"></a>写流程</h5><img src= "/img/loading.gif" data-src="C:\Users\tsxqc\Pictures\1.jpg" alt="1" style="zoom:50%;" /><p><img src= "/img/loading.gif" data-src="https://i.loli.net/2020/11/10/SnTxah6ezQBqI7G.jpg" alt="1.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MyRocks </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>122. Best Time to Buy and Sell Stock II</title>
       <link href="/2020/11/10/II/"/>
       <url>/2020/11/10/II/</url>
