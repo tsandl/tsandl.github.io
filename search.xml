@@ -11,6 +11,18 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>编写一个函数来查找字符串数组中的最长公共前缀。</p><p>如果不存在公共前缀，返回空字符串 <code>&quot;&quot;</code>。</p><h2 id="示例1："><a href="#示例1：" class="headerlink" title="示例1："></a>示例1：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]</span><br><span class="line">输出: &quot;fl&quot;</span><br></pre></td></tr></table></figure><h2 id="示例2："><a href="#示例2：" class="headerlink" title="示例2："></a>示例2：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]</span><br><span class="line">输出: &quot;&quot;</span><br><span class="line">解释: 输入不存在公共前缀。</span><br></pre></td></tr></table></figure><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>所有输入只包含小写字母a-z。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>只需要将字符串数组进行排序，找到第一个字符串与最后一个字符串，比较他们公共部分即可。</p><h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string longestCommonPrefix(vector&lt;string&gt;&amp; strs) &#123;</span><br><span class="line">        string tmp&#x3D;&quot;&quot;;</span><br><span class="line">        if(strs.size()&#x3D;&#x3D;0)&#123;&#x2F;&#x2F;空字符串，需要提前判断。</span><br><span class="line">            return tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        sort(strs.begin(),strs.end());</span><br><span class="line">        for(int i&#x3D;0;i&lt;strs[0].length()&amp;&amp;i&lt;strs[strs.size()-1].length();i++)&#123;</span><br><span class="line">            if(strs[strs.size()-1][i]&#x3D;&#x3D;strs[0][i])&#123;</span><br><span class="line">                tmp+&#x3D;strs[0][i];</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return tmp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
       
     </entry>
     
